@@ -53,6 +53,7 @@ header {
 	background: rgb(42, 42, 42);
 	width: 100%;
 	padding: 20px;
+	margin-top: 10px;
 	/*flex*/
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -111,17 +112,149 @@ header nav a{
 header nav a:hover{
 	background: #efa37b;
 }
-
 .main{
-	width: 70%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+	padding: 20px;
+	/*flex*/
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 70%;
+	flex: 1 1 70%;
+	
+}
+.main article{
+	margin-top: 10px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #000;
+}
+.main article:nth-last-child(1){
+	margin-top: 10px;
+	padding-bottom: 0;
+	border-bottom: none;
 }
 aside{
-	width: 30%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: rgb(42, 42, 42);
 	padding: 20px;
 	/*flex*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex: 1 1 30%;
+	flex: 1 1 30%;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+aside .aside{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	
 }
 
+
+footer{
+	background: rgb(42, 42, 42);
+	height:auto;
+	width: 100%;
+	padding: 20px;
+	/*Flex*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+footer .links{
+	
+	background: #c0392b;
+	/*flex*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+}
+footer .links a{
+	padding: 10px;
+	width: 50%;
+	text-decoration: none;
+	color: #ffF;
+	-webkit-transition: .4s;
+	transition: .4s;
+	/*flex*/
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	text-align: center;
+}
+footer .links a:hover{
+	background: #e35445;
+
+}
+footer .social {
+	
+	/*flex*/
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	
+}
+footer .social >div{
+	width: 100px;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+footer .social > div:hover{
+	background: #ed984c;
+}
+footer .facebook{
+	margin-right: 10px;
+	background: #e67e22;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	
+}
+footer .tw{
+	background: #e67e22;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	text-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+footer .social a{
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+
+}
 
