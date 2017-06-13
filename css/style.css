@@ -340,15 +340,21 @@ footer .autor{
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
+	-webkit-transition: .5s;
+	transition: .5s;
 
 }
-footer .autor p{
+footer .autor a{
 	text-decoration: none;
 	color: #fff
 }
-footer .autor p:active{
+footer .autor a:visited{
 	text-decoration: none;
 	color: #fff
+}
+footer .autor p:hover{
+	text-decoration: none;
+	color: #c6544a
 }
 
 
