@@ -27,7 +27,7 @@ header .logo {
 	line-height: 60px;
 	text-align: center;
 	-webkit-animation: logo 1.5s 1s infinite;
-	animation: logo 1.5s 1s infinite;
+	animation: logo 2.5s 1s infinite ease-in-out;
 }
 .aside{
 	height: 260px;
@@ -229,7 +229,31 @@ footer{
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
-
+.foot{
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.autor{
+	width: 100%;
+	margin: 10px;
+	color: #fff;
+	margin-bottom: -10px;;
+	display: -webkit-box;;
+	display: -ms-flexbox;;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
 footer .links{
 	
 	background: #c0392b;
@@ -257,7 +281,7 @@ footer  .links a:hover{
 
 }
 footer .social {
-	
+	border-radius: 10px;
 	/*flex*/
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -270,7 +294,7 @@ footer .social {
 	
 }
 footer .social >div{
-	width: 100px;
+	width: 120px;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
@@ -278,8 +302,10 @@ footer .social > div:hover{
 	background: #ed984c;
 }
 footer .facebook{
+	border-radius: 10px;
 	margin-right: 10px;
-	background: #e67e22;
+	background: #3b5998;
+	font-weight: bold;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -289,7 +315,9 @@ footer .facebook{
 	
 }
 footer .tw{
-	background: #e67e22;
+	border-radius: 10px;
+	font-weight: bold;
+	background: #00aced;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -304,4 +332,23 @@ footer .social a{
 	padding: 10px;
 
 }
+footer .autor{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+}
+footer .autor p{
+	text-decoration: none;
+	color: #fff
+}
+footer .autor p:active{
+	text-decoration: none;
+	color: #fff
+}
+
 
